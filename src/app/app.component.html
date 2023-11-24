@@ -1,17 +1,53 @@
-<mat-card>
-  <mat-card-header> Cadastro de Empresas</mat-card-header>
+<mat-card class="background-card">
+  <mat-card-header > Cadastro de Empresas</mat-card-header>
     <mat-card-content>
     <mat-form-field>
-      <mat-label>Nome da Empresa </mat-label>
-
+      <p class="nameEmp">Nome da Empresa </p>
+    <hr>
+      <div>
       <p> Razao Social: </p>
-      <input [(ngModel)]="razaoSocial" />
+      <input  type="text" [(ngModel)]="razaoSocial"
+      razaoSocial= "razaoSocial" placeholder="Nome da razao social"/>
+      </div>
+
+      <div>
       <p>Nome Fantasia:</p>
-      <input [(ngModel)]="nomeFantasia" />
-      <p>Cnpj: </p>
-      <input [(ngModel)]="cnpj"/>
+      <input  type="text"[(ngModel)]="nomeFantasia"
+      nomeFantasia= "nomeFantasia" placeholder="Digite o Nome Fantasia" />
+      </div>
 
+      <div>
+      <p>Cnpj:</p>
+      <input  type="text" [(ngModel)]="cnpj" maxlength="19  " placeholder="Digite o cnpj"  />
+      </div>
 
+      <div class="write">
+      {{razaoSocial}}
+      </div>
+
+      <div class="write">
+      {{nomeFantasia}}
+      </div>
+
+      <div class="write">
+      {{cnpj}}
+      </div>
+    </mat-form-field>
+
+  <mat-form-field>
+      <p class="buscaCep">Informe o Cep da Empresa</p>
+      <input matInput maxlength="8" pattern="[0-9]" [(ngModel)]="cep">
+
+      <button mat-raised-button color="accent" (click)="buscar()">Buscar</button>
+
+      <div class="return">
+      <div class>Cep: {{dadosEndereco?.cep}}</div>
+      <div>Lograduro: {{dadosEndereco?.logradouro}}</div>
+      <div>Complemento: {{dadosEndereco?.complemento}}</div>
+      <div>Bairro:{{dadosEndereco?.bairro}}</div>
+      <div>Localidade: {{dadosEndereco?.localidade}}</div>
+      <div>Uf:{{dadosEndereco?.uf}}</div>
+      </div>
     </mat-form-field>
   </mat-card-content>
 

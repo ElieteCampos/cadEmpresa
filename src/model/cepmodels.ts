@@ -1,7 +1,5 @@
 export interface CepDTO {
-  razaoSocial: string
-  nomeFantasia: string
-  cnpj: string
+  cep: string
   logradouro: string
   complemento: string
   bairro: string

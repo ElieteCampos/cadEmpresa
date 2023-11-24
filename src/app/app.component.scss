@@ -1,0 +1,42 @@
+mat-card-content {
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  gap:5px;
+}
+.background-card {
+  background-image: url("https://img.freepik.com/fotos-premium/espaco-de-fundo-marrom-claro-para-fundo-de-texto-com-folhas-amarelas-nas-bordas_894754-3383.jpg?w=740");
+  background-size: cover;
+}
+mat-card-header {
+  font-size: 40px;
+  color:rgb(165, 42, 42);
+  padding: 40px;
+  text-align: center;
+  gap:5px;
+}
+.nameEmp {
+  font-size: 25px;
+  color:rgb(102, 29, 29);
+}
+
+div {
+  font-size: 20px;
+  font-style:normal;
+  margin-top: 15px;
+}
+.write {
+  color:rgb(102, 29, 29);
+  font-size: 20px;
+}
+
+.buscaCep {
+  font-size: 25px;
+  color:rgb(102, 29, 29);
+  gap:5px;
+}
+
+.return {
+  color:rgb(102, 29, 29);
+  font-size: 20px;
+}
